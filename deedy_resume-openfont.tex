@@ -1,0 +1,214 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage[super]{nth}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Al-Jamil}{Suvo}{ \urlstyle{same}{aljamilsuvo@gmail.com} | +8801670264806
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Bangladesh University of Engineering \& Technology}
+\descript{B.Sc. in Computer Science \& Engineering}
+\location{Oct 2018 | Dhaka, Bangladesh}
+\location{ CGPA: 3.44 / 4.0}
+\sectionsep
+
+\section{Experience}
+\runsubsection{REVE Systems}
+\descript{| Jr. Software Engineer }
+\location{Nov 2018 - Present | Dhaka, Bangladesh}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/AlJamilSuvo}{\bf AlJamilSuvo} \\
+LinkedIn://  \href{https://www.linkedin.com/in/al-jamil-suvo/}{\bf al-jamil-suvo} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C \textbullet{}   C++ \textbullet{} Cmake \textbullet{} Android \textbullet{} Java \textbullet{}
+Python \textbullet{} Tensorflow \textbullet{} Keras \textbullet{} Django \textbullet{} OpenCV \textbullet{}   \textbullet{} Assembly \textbullet{} \LaTeX\ \\ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities} 
+I have participated in different  contests, online programming and Hackathons.
+\sectionsep
+\section{Awards}
+\begin{itemize}
+    \item \nth{1} Runner Up, Machine
+Learning, National Robotech Festival 2017
+\item \nth{2}Runner Up, National Hackathon 2016
+\item \nth{1} Runner Up, Earthquake Hackathon 2016
+\item \nth{1} Runner Up, BRACathon 2017
+\end{itemize}
+
+
+
+\sectionsep
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Projects}
+\runsubsection{VOIP Calling and Chat Applications}
+\descript{| REVE Systems}
+In this project, I am responsible for developing  calling and chat GUI, contact management, group chat, conference, file sharing, message searching, integrating API, and improving user experience. 
+\location{Android | Java | Kotlin | SQLite3}
+\sectionsep
+
+\runsubsection{VOIP Applications Development Management}
+\descript{| REVE Systems }
+With this project, I helped the company deliver VOIP applications faster. This project reduces time in the bug fixing process.
+This project offers lots of customization in application appearances and very quick adaptation with clients' preferences. 
+\location{Python | Shell}
+\sectionsep
+
+\runsubsection{Message Encryption and Exchange Library}
+\descript{| REVE Systems}
+I implemented end to end message encryption and web socket based message communication. This library is used in both Android and iOS applications. 
+\location{C++}
+\sectionsep
+
+\runsubsection{National Identity (NID) Card Verification API}
+\descript{| REVE Systems}
+I developed a neural network based API to extract user information from NID image, validate those information and perform face matching. This API is used in the registration  process for VOIP application for BTCL.
+\location{Python | Django | Keras | Tensorflow | Tesseract-Ocr | Opencv}
+\sectionsep
+
+\runsubsection{Street Sign Detection using Raspberry Pi}
+\descript{| Academic Project}
+I developed a neural network based API to extract user information from NID image, validate those information and perform face matching. 
+\location{Python | Keras | Tensorflow | Opencv}
+\sectionsep
+
+\runsubsection{Licence Plate Detection and Application From Data Extraction}
+\descript{| Academic Project Collaborate With Sure Cash}
+ I have implemented a system to extract numbers from  license plates of motor vehicles  and extract information from  the hand filled up application form of Sure Cash’s scholarship. \location{Python | Tensorflow | Opencv}
+\sectionsep
+
+\runsubsection{Prince of Persia Game}
+\descript{| Academic Project}
+I implemented a 2.5D game inspired by Prince of Persia (1989). \location{C++}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Research}
+\runsubsection{F-NSGA III: An Improved Many-Objective Optimization Algorithm for Appropriate Software Architecture Considering Maintenance and Security Related Metrics}
+\descript{| Undergrad Thesis}
+I proposed some improvement on measuring metrics of modularity, reusability, performance of software architecture, and adapted some security related metrics  to this context. Using many-objective optimization algorithms: NSGA-III, I proposed an approach to suggest some possible options by optimizing these contradictory these metrics of a software architecture. I have proposed some special  improvement on NSGA-III in this context  using domain knowledge.  
+
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
